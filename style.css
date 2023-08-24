@@ -4,3 +4,387 @@
   box-sizing: border-box;
 }
 
+header {
+  vertical-align: middle;
+  width: 100%;
+  height: 70px;
+  background-color: #EC715F;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.header > :first-child {
+  margin-right: auto;
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-list-item{
+  display: inline-block;
+  list-style: none;
+  line-height: 70px;
+  font-size: 16px;
+  color: #FAFAFA;
+  padding: 0 30px;
+}
+
+main{
+  margin: 0 auto;
+}
+
+.main-visual {
+  background-image: url(img/mv.png);
+  background-position: center;
+  width: 100%;
+  height: 650px;
+}
+
+.main-visual > h1 {
+  font-size: 64px;
+  color: #FAFAFA;
+  padding: 200px 10px 0 0;
+  text-align: center;
+}
+
+.main-visual > h6 {
+  font-size: 20px;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+.portfolio {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #ECEFF1;
+}
+
+h2 {
+  font-size: 32px;
+  color: #000000;
+  text-align:center;
+}
+
+.underbar {
+  height: 3px;
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 8px;
+  background-color: #EC715F;
+  text-align:center;
+}
+
+.portfolio > p, .feature > p, .profile > p, .contact > p {
+  font-size: 16px;
+  color: #000000;
+  text-align:center;
+}
+
+.images {
+  width: 920px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6 {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image1, .image2, .image4, .image5 {
+  margin-right: 10px;
+}
+
+.image1, .image2, .image3 {
+  margin-bottom: 10px;
+}
+
+.image1 {
+  background-image: url(img/sketch.jpg)
+}
+
+.image2 {
+  background-image: url(img/websuku.png)
+}
+
+.image3 {
+  background-image: url(img/write.jpg)
+}
+
+.image4 {
+  background-image: url(img/webcamp.png)
+}
+
+.image5 {
+  background-image: url(img/talk.jpg)
+}
+
+.image6 {
+  background-image: url(img/webcamp-mother.png)
+}
+
+.feature {
+  width: 100%;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+
+.strengths {
+  width: 980px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+}
+
+.strength:nth-child(1), .strength:nth-child(2) {
+  margin-right: 10px;
+}
+
+.strength > i {
+  display:block;
+  text-align: center;
+  font-size: 60px;
+}
+
+.strength > h3 {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.profile {
+  width: 100%;
+  background-color: #ECEFF1;
+  padding: 90px;
+}
+
+.profile-detail {
+  padding-top: 30px;
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.profile-left {
+  width: 512px;
+}
+
+.profile-image {
+  display: block;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.profile-right {
+  width: 512px;
+}
+
+.profile-right > h3 {
+  font-size: 20px;
+  color: #000000;
+}
+
+.profile-right > p {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  width: 800px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.contact-detail {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px
+}
+
+.address {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.mail {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 20px
+}
+
+.tel {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.mail h3, .SNS > h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.SNS {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.SNS-detail {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.SNS-icon {
+  display: flex;
+}
+
+.SNS-icon > i {
+  margin-right: 20px;
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  color: #FAFAFA;
+  background-color: #EC715F;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  header {
+    height: 50px;
+  }
+
+  .header {
+    width: 90%
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+    margin-left: auto;
+    border-color: #FAFAFA;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+  }
+
+  .hamburger > span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #FAFAFA;
+    margin: 5px 0;
+  }
+
+  nav {
+    display: none
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+  }
+
+  .main-visual > h1 {
+    font-size: 40px;
+    padding: 200px 10px 0 0;
+  }
+
+  .main-visual > h6 {
+    font-size: 18px;
+  }
+
+  .portfolio {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .images {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .image1, .image3, .image5 {
+    display:none
+  }
+
+  .image2, .image4, .image6 {
+    margin: 0 auto;
+  }
+
+  .image2, .image4 {
+    margin-bottom: 10px
+  }
+
+  .strengths {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .strength {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .profile-detail {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-left {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .profile-right {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .contact {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .contact-detail {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
